@@ -1,0 +1,408 @@
+@charset "utf-8";
+
+/* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+*{margin:0;padding:0;box-sizing: border-box;}
+html {
+    font-size: 62.5%;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'NanumSquare', 'malgun gothic', 'sans-serif', 'dotum';
+    
+}
+ul {list-style-type: none;}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+figcaption,
+figure,
+main {
+    display: block;
+}
+figure {
+    margin: 1em 40px;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+dfn {
+    font-style: italic;
+}
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+small {
+    font-size: 80%;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sub {
+    bottom: -0.25em;
+}
+sup {
+    top: -0.5em;
+}
+audio,
+video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+img {
+    border-style: none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    border:none;
+    text-indent:
+}
+button,
+input {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+textarea {
+    overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+details,
+menu {
+    display: block;
+}
+summary {
+    display: list-item;
+}
+canvas {
+    display: inline-block;
+}
+template {
+    display: none;
+}
+[hidden] {
+    display: none;
+}
+
+.blind {
+    display: none;
+}
+.m_only {
+    /* display: none; */
+}
+.d_only {
+    display: none;
+
+}
+
+/*
+    웹폰트 2021-07-30-02
+*/
+/* woff + otf */
+@font-face {
+    font-family: 'NanumSquare';
+    src: url("font/nanumsquarel.woff") format('woff'), url("font/nanumsquarel.otf") format('opentype');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'NanumSquare';
+    src: url("font/nanumsquarer.woff") format('woff'), url("font/nanumsquarer.otf") format('opentype');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'NanumSquare';
+    src: url("font/nanumsquareb.woff") format('woff'), url("font/nanumsquareb.otf") format('opentype');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'NanumSquare';
+    src: url("font/nanumsquareeb.woff") format('woff'), url("font/nanumsquareeb.otf") format('opentype');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* woff */
+@font-face {
+    font-family: 'NanumSquareW';
+    src: url("font/nanumsquarelW.woff") format('woff');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'NanumSquareW';
+    src: url("font/nanumsquarerW.woff") format('woff');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'NanumSquareW';
+    src: url("font/nanumsquarebW.woff") format('woff');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'NanumSquareW';
+    src: url("font/nanumsquareebW.woff") format('woff');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* otf */
+@font-face {
+    font-family: 'NanumSquareO';
+    src: url("font/nanumsquarelO.otf") format('opentype');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'NanumSquareO';
+    src: url("font/nanumsquarerO.otf") format('opentype');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'NanumSquareO';
+    src: url("font/nanumsquarebO.otf") format('opentype');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'NanumSquareO';
+    src: url("font/nanumsquareebO.otf") format('opentype');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* Noto */
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url("font/NotoSansKR-Regular.eot");
+    src: url("font/NotoSansKR-Regular.eot?#iefix") format('embedded-opentype'), url("font/NotoSansKR-Regular.woff") format('woff');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url("font/NotoSansKR-Medium.eot");
+    src: url("font/NotoSansKR-Medium.eot?#iefix") format('embedded-opentype'), url("font/NotoSansKR-Medium.woff") format('woff');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'NotoSansKR';
+    src: url("font/NotoSansKR-Bold.eot");
+    src: url("font/NotoSansKR-Bold.eot?#iefix") format('embedded-opentype'), url("font/NotoSansKR-Bold.woff") format('woff');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'NanumSquare', 'malgun gothic', 'sans-serif', 'dotum';
+}
+a,
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+/* reset override */
+body,
+html {
+    height: 100%;
+}
+body {
+    font-size: 18px;
+    line-height: 1.6667;
+    color: #303030;
+}
+body {
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+a,
+button,
+input,
+select,
+textarea {}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+dd,
+dl,
+dt,
+li,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+p {
+    margin: 0;
+}
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+[role="button"] {
+    cursor: pointer;
+}
+b {
+    font-weight: 900;
+}
+
+/* body 스크롤 기본설정 */
+body {
+    overflow-y: scroll;
+}
+
+/* 모바일에서 클릭할때 생기는 bg 색상 변경 */
+body {
+    -webkit-tap-highlight-color: rgba(0,0,0,.2);
+}
+
+/* 모바일에서는 없어지는 br */
+br.ph {
+    display: none;
+}
+
+/* 랭귀지팩텍스트 */
+span.p {
+    display: inline-block;
+}
